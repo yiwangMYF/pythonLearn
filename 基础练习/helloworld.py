@@ -20,3 +20,6 @@ if True :
     print("good")
 else :
     print("bad")
+
+a,b=1,2
+print('a,b:',a,b)

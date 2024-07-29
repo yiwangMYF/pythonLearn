@@ -26,6 +26,11 @@ print(dict1)
 
 print(len(dict1))
 print(str(dict1))
+print('------------------------------------')
+print(dict1.keys())
+print(dict1.values())
+print(dict1.items())
+print('------------------------------------')
 
 for k in dict1.keys():
     print(f'k:{k},v:{dict1[k]}')
