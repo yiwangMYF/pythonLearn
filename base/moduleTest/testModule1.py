@@ -12,15 +12,16 @@
 7.包是一种管理python模块命名空间的形式，采用'点模块名称'，如A.B表示A包下的B模块。
    在导入包时python会根据搜索路径（sys.path）搜索该目录下的子目录，若子目录中包含一个__init__.py的文件，则认为当前目录是一个包，
    __init__.py可以为空文件，也可以包含一些初始化代码及为__all__赋值
+8.若模块中有__all__变量，则‘from moduleName import *’只会导入__all__变量中的值
 '''
 
-from cal import sum
+from pp import sum1
 import sys
 
 
 if __name__=='__main__':
-    print('sum1+1:',sum(1,1,2,2,3,3))
-    print('sum module:',dir(sum))
+    print('sum1+1:',sum1(1,1,2,2,3,3))
+    print('sum module:',dir(sum1))
     print('sys module:',dir(sys))
 else:
     print('I am imported')

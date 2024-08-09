@@ -20,6 +20,7 @@ print(b**a)
 
 #测试数字类转换
 print(float(b))
-
-
 print("\a")
+
+
+print('result:',2**13)
